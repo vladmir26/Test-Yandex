@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "YS Text";
     font-style: normal;
@@ -20,15 +21,28 @@
 }
 
 
+.header {
+    width: 1100px;
+    height: 716px;
+    margin-top: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('./assets/content-image/image1.png');
+    background-repeat: no-repeat;
+    background-position: right bottom 70px;
+}
+.header__logo {
+    height: 2rem;
+}
 .header__heading {
-    position: relative;
-    left: 50px;
-    width: 420px;
+    max-width: 420px;
+    margin-top: 72px;
     height: 196px;
-    margin-top: 72px;
     color: #21201F;
-    margin-top: 72px;
-    font-family: "YS Text";
+    font-family: "YS Text", sans-serif;
     font-size: 72px;
     font-weight: 900;
     line-height: 100%;
@@ -36,14 +50,13 @@
 }
 
 .header__inner-wrapper {
-    position: absolute;
     width: 420px;
 }
 
 .header__text {
     margin-top: 48px;
     color: #21201F;
-    font-family: YS Text;
+    font-family: YS Text, sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 130%;
@@ -62,9 +75,9 @@
     background: radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%); 
 }
 
-.header___new-price-text {
+.header__new-price-text {
     color: #2E2C21;
-    font-family: YS Text;
+    font-family: YS Text, sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 120%;
@@ -84,7 +97,7 @@
 .header__old-price-text {
     position: absolute;
     color: #808080;
-    font-family: YS Text;
+    font-family: YS Text, sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 120%;
@@ -109,7 +122,7 @@
     height: 65px;
     text-align: center;
     color: #21201F;
-    font-family: YS Text;
+    font-family: YS Text, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -127,3 +140,104 @@
     width: 744px;
     height: 618px;
 }
+
+main {
+    width: 1100px;
+    height: calc(100vh - 716px);
+    margin: auto;
+}
+
+.advantages__heading {
+    max-width: 620px;
+    height: 96px;
+    color: #21201f;
+    font-family: YS Text, sans-serif;
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: -1.12px;
+}
+.advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 48px;
+}
+.advantages__item {
+    flex-basis: 50%;
+}
+.advantages__item:nth-child(3) {
+    margin-top: 61px;
+}
+.advantages__item:last-child {
+    margin-top: 61px;
+}
+.advantages__text {
+    color: #21201f;
+    font-family: YS Text;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+}
+.advantages__text-left {
+    width: 310px;
+}
+.advantages__text-right {
+    width: 360px;
+}
+
+.events__heading {
+    margin-top: 128px;
+    max-width: 600px;
+    color: #21201f;
+    font-family: YS Text;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: -0.96px;
+}
+.events__text {
+    margin-top: 48px;
+    max-width: 364px;
+    color: #21201f;
+    font-family: YS Text;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.events__frame-first {
+    width: 456px;
+    height: 456px;
+    border-radius: 64px;
+}
+.events__image-first {
+    position: relative;
+    bottom: 15px;
+    right: 710px;
+}
+.events__frame-second {
+    width: 456px;
+    height: 456px;
+    border-radius: 64px;
+}
+.events__image-second {
+    position: relative;
+    bottom: 240px;
+    right: 250px;
+}
+.events__frame-third {
+    width: 456px;
+    height: 456px;
+    border-radius: 64px;
+}
+.events__frame-fourth {
+    width: 456px;
+    height: 456px;
+    border-radius: 64px;
+}
+.events__image-third {
+    position: relative;
+    top: 370px;
+    right: 355px;
+}
+
